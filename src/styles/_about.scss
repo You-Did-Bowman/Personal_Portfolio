@@ -1,3 +1,44 @@
+/* 
+- border für das bild https://www.youtube.com/watch?v=-VOUK-xFAyk // https://codepen.io/kevinpowell/pen/QWVKZjx
+*/
+
 .aboutContainer {
-    border: 2px solid yellow;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: $genericPadding;
+  
+
+  h2 {
+    color: $yellow;
+    text-align: center;
+    padding-top: $genericPadding;
+  }
+
+  .photo {
+    background-image: url("/Bewerbungsbild.jpg");
+    background-size: cover;
+    background-position: -17px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: $genericPadding;
+  }
+
+  .facts {
+    padding-top: $genericPadding;
+    .facts_ul {
+        padding-top: $genericPadding;
+
+        :first-child {
+            text-decoration: underline 2px;
+            text-decoration-color: $yellow;
+        }
+    }
+    li {
+    list-style: none;
+  }
+}
 }

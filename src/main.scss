@@ -15,5 +15,11 @@
 
 
 body {
+    background-color: black;
     font-family: $regularFont;
+    color: white;
+
+    a {
+        text-decoration: none;
+    }
 }

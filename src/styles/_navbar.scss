@@ -1,14 +1,18 @@
 .navContainer {
-  border: 2px solid green;
+  background-color: $yellow;
 
   .navbar {
     display: flex;
     justify-content: space-evenly;
 
+    font-size: .8rem;
+    font-weight: bold;
+
     a {
       padding: 0.5rem;
-
       width: 5rem;
+
+      color: black;
     }
   }
 }

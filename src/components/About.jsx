@@ -3,28 +3,29 @@ function About() {
     <>
       <div className="aboutContainer">
         <h2>About</h2>
-        <div className="photo">photo</div>
+        
+        <div className="photo"></div>
 
         <div className="facts">
           <h3>Facts</h3>
           <ul>
             <div className="facts_ul">
-              <li>Name</li>
+              <li>Name:</li>
               <li>Judith Bohmann</li>
             </div>
 
             <div className="facts_ul">
-              <li>Based in</li>
+              <li>Based in:</li>
               <li>Potsdam, Germany</li>
             </div>
 
             <div className="facts_ul">
-              <li>Mail</li>
+              <li>Mail:</li>
               <li>ju.bohmann@gmx.de</li>
             </div>
 
             <div className="facts_ul">
-              <li>Mobile</li>
+              <li>Mobile:</li>
               <li>+49 176 61 89 74 52 </li>
             </div>
           </ul>
@@ -59,8 +60,8 @@ function About() {
           </ul>
         </div>
         <div className="xp">
-          <h2>Professional experience</h2>
-          <h3>Motognosis GmbH</h3>
+          <h3>Professional experience</h3>
+          <h4>Motognosis GmbH</h4>
           <p>2020 - 2024</p>
           <p>
             Implementation of the QM for the medical device 'Amsa' according to
