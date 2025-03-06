@@ -30,4 +30,12 @@
 
 img {
   width: 200px;
+}
+
+.footerContainer {
+  border: 2px solid purple;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }/*# sourceMappingURL=main.css.map */

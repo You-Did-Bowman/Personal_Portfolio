@@ -25,9 +25,9 @@ function App() {
         <CV />
       </div>
 
-      <div id="contact">
+   {/*    <div id="contact">
         <Contact />
-      </div>
+      </div> */}
 
       <Footer />
     </>

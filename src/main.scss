@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
+@import "./styles/variables";
+
 @import "./styles/header";
 @import "./styles/navbar";
 @import "./styles/about";
-@import "./styles/portfolio"
+@import "./styles/portfolio";
+@import "./styles/footer";
+
+
+
+body {
+    font-family: $regularFont;
+}
