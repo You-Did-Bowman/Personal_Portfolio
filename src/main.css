@@ -22,4 +22,12 @@
 .navContainer .navbar a {
   padding: 0.5rem;
   width: 5rem;
+}
+
+.aboutContainer {
+  border: 2px solid yellow;
+}
+
+img {
+  width: 200px;
 }/*# sourceMappingURL=main.css.map */
