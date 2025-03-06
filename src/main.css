@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+.aboutContainer .skills h4, .aboutContainer .facts .facts_ul :first-child {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  text-decoration-color: #FFED00;
+}
+
 .hContainer {
   background-image: url("/banner.png");
   background-size: 147vw;
@@ -59,13 +65,31 @@
 .aboutContainer .facts .facts_ul {
   padding-top: 1rem;
 }
-.aboutContainer .facts .facts_ul :first-child {
-  -webkit-text-decoration: underline 2px;
-          text-decoration: underline 2px;
-  text-decoration-color: #FFED00;
-}
 .aboutContainer .facts li {
   list-style: none;
+}
+.aboutContainer .skills {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.aboutContainer .skills h4 {
+  padding-top: 1rem;
+}
+.aboutContainer .skills li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.aboutContainer .skills .skill-level {
+  display: flex;
+  gap: 0.4rem;
+}
+.aboutContainer .skills .skill-level .level-box {
+  width: 10px;
+  height: 10px;
+  background-color: #FFED00;
 }
 
 img {

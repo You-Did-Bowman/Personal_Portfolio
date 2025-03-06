@@ -1,9 +1,32 @@
+/* 
+- Skills mit gelben quadraten darstellen. höchstens 5 ... leere quadrate vllt grau?
+- return noch in weiter Components zerpflücken?
+*/
+
 function About() {
+  const skills = [
+    { id: 1, name: "JAVASCRIPT", lvl: 5, type: "language" },
+    { id: 2, name: "CSS", lvl: 4, type: "language" },
+    { id: 3, name: "HTML", lvl: 5, type: "language" },
+    { id: 4, name: "PYTHON", lvl: 2, type: "language" },
+    { id: 5, name: "REACT", lvl: 4, type: "library" },
+    { id: 6, name: "NODE", lvl: 3, type: "tools" },
+    { id: 7, name: "MONGODB", lvl: 2, type: "backend" },
+    { id: 8, name: "SASS", lvl: 4, type: "tools" },
+    { id: 9, name: "BOOTSTRAP", lvl: 3, type: "library" },
+  ];
+
+  const languages = skills.filter((el) => el.type === "language");
+  const libraries = skills.filter((el) => el.type === "library");
+  const backend = skills.filter((el) => el.type === "backend");
+  const tools = skills.filter((el) => el.type === "tools");
+  //console.log(libraries);
+
   return (
     <>
       <div className="aboutContainer">
         <h2>About</h2>
-        
+
         <div className="photo"></div>
 
         <div className="facts">
@@ -31,7 +54,62 @@ function About() {
           </ul>
         </div>
 
-        <div className="skills">skills</div>
+        <div className="skills">
+          <h3>Skills</h3>
+          <h4>LANGUAGES</h4>
+          <ul className="skillList">
+            {languages.map((el) => (
+              <li key={el.id}>
+                {el.name}{" "}
+                <div className="skill-level">
+                  {Array.from({ length: el.lvl }).map((_, index) => (
+                    <div key={index} className="level-box"></div>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <h4>LIBRARIES</h4>
+          <ul className="skillList">
+            {libraries.map((el) => (
+              <li key={el.id}>
+                {el.name}{" "}
+                <div className="skill-level">
+                  {Array.from({ length: el.lvl }).map((_, index) => (
+                    <div key={index} className="level-box"></div>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <h4>BACKEND</h4>
+          <ul className="skillList">
+            {backend.map((el) => (
+              <li key={el.id}>
+                {el.name}{" "}
+                <div className="skill-level">
+                  {Array.from({ length: el.lvl }).map((_, index) => (
+                    <div key={index} className="level-box"></div>
+                  ))}
+                </div>
+              </li>
+            ))}
+            </ul>
+          <h4>TOOLS</h4>
+          <ul className="skillList">
+            {tools.map((el) => (
+              <li key={el.id}>
+                {el.name}{" "}
+                <div className="skill-level">
+                  {Array.from({ length: el.lvl }).map((_, index) => (
+                    <div key={index} className="level-box"></div>
+                  ))}
+                </div>
+              </li>
+            ))}
+            </ul>
+          <ul></ul>
+        </div>
 
         <div className="quali">
           <h3>Qualifications</h3>
