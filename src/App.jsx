@@ -17,18 +17,18 @@ function App() {
         <About />
       </div>
 
-      <div id="cv">
-        <CV />
-      </div>
-
       <div id="portfolio">
         <Portfolio />
+      </div>
+
+      <div id="cv">
+        <CV />
       </div>
 
       <div id="contact">
         <Contact />
       </div>
-      
+
       <Footer />
     </>
   );
