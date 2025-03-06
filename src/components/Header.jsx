@@ -1,7 +1,9 @@
+
+
 function Header() {
   return (
     <>
-      <div>Header</div>
+      <div className = "hContainer">Header</div>
     </>
   );
 }

@@ -1,0 +1,14 @@
+.navContainer {
+  border: 2px solid green;
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      padding: 0.5rem;
+
+      width: 5rem;
+    }
+  }
+}
