@@ -1,0 +1,103 @@
+@media screen and (min-width: 768px) {
+    .hContainer {
+        height: 200px;
+        background-size: cover;
+    }
+
+    /* ----- About ------ */
+
+    .aboutWrapper {
+        background-image: url("../../public/bg_black_9.jpg");
+        background-size: cover;
+    }
+
+    .aboutContainer {
+        padding: 2rem;
+        position: relative;
+       
+        min-width: 625px;
+        top: 4rem;
+        border-radius: 50px;
+        background-color: #413f3f46;
+        grid-template-columns: 1fr 1fr 1f;
+        gap: 2rem;
+        grid-template-areas: 
+        "h2 h2"
+        "photo skills"
+        "facts skills"
+        "quali quali "
+        "xp xp"
+        ;
+    }
+
+    .photo {
+        grid-area: photo;
+        align-self: center;
+    }
+
+    .facts {
+        grid-area: facts;
+        align-self: center;
+    }
+
+    .skills {
+        grid-area: skills;
+    }
+
+    .quali {
+        grid-area: quali;
+
+        .qualiUl {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "qualiLi1 qualiLi2 "
+        "qualiLi1 qualiLi3";
+        
+        }
+
+        .qualiLi1 {
+            grid-area: qualiLi1;
+        }
+
+        .qualiLi2 {
+            grid-area: qualiLi2;
+            text-align: right;
+        }
+
+        .qualiLi3 {
+            grid-area: qualiLi3;
+            text-align: right;
+        }
+    }
+
+    .xp {
+        grid-area: xp;
+    }
+
+     h2 {
+        grid-area: h2;
+     }        
+
+     /* ----- Portfolio ---- */
+
+     .portWrapper {
+        margin: 7rem 0;
+        background-image: url("../../public/bg_black_4.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: right -200px;
+        height: 980px;
+     }
+
+     .portfolioContainer {
+        margin-left: 4rem;
+        height: 880px;
+        width: 50vw;
+        border-radius: 50px;
+        background-color: #413f3f46;
+
+     }
+
+
+}

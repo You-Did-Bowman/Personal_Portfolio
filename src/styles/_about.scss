@@ -3,13 +3,11 @@
 */
 
 .aboutContainer {
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  display: grid;
   padding-top: $genericPadding;
   width: 70vw;
+  
 
   ul {
     padding-left: 0;
@@ -20,6 +18,9 @@
     text-align: center;
     padding-top: $genericPadding;
   }
+   h3 {
+    text-align: center;
+   }
 
   .photo {
     background-image: url("/Bewerbungsbild.jpg");
@@ -28,10 +29,11 @@
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    margin: $genericPadding;
+    margin: $genericPadding auto;
   }
 
   .facts {
+    margin: 0 auto;
     padding-top: $genericPadding;
     
     .facts_ul {
@@ -113,9 +115,7 @@
   }
 
   .xp {
-    margin-top: $genericPadding;
-    padding-top: $genericPadding;
-
+  
     h4 {
       font-size: 1.1rem;
       font-weight: bold;

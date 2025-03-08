@@ -1,6 +1,6 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import { Carousel } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Portfolio() {
   const portfolio = [
@@ -60,25 +60,31 @@ function Portfolio() {
   ];
 
   return (
-    <div className="portfolioContainer">
-      <h2>Portfolio</h2>
-      <Carousel className = "carousel">
-        {portfolio.map((proj) => (
-          <Carousel.Item key={proj.id}>
-            <img
-              className="d-block w-100"
-              src={proj.image}
-              alt={proj.name}
-            />
-            <div className="caption">
-              <h3>{proj.name}</h3>
-              <p className = "portDesc">{proj.description}</p>
-              <p><a className = "portLink" href = {proj.webpageLink}>{proj.name}</a></p>
-              <p><a className = "portLink" href = {proj.githubLink}>GitHub Repo</a></p>
-            </div>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+    <div className="portWrapper">
+      <div className="portfolioContainer">
+        <h2>Portfolio</h2>
+        <Carousel className="carousel">
+          {portfolio.map((proj) => (
+            <Carousel.Item key={proj.id} className="carouselItem">
+              <img className="d-block w-100" src={proj.image} alt={proj.name} />
+              <div className="caption">
+                <h3>{proj.name}</h3>
+                <p className="portDesc">{proj.description}</p>
+                <p>
+                  <a className="portLink" href={proj.webpageLink}>
+                    {proj.name}
+                  </a>
+                </p>
+                <p>
+                  <a className="portLink" href={proj.githubLink}>
+                    GitHub Repo
+                  </a>
+                </p>
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 }

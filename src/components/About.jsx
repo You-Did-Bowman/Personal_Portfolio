@@ -47,152 +47,163 @@ function About() {
       ],
     },
     {
-      id: 1,
-      year: 2025,
+      id: 2,
+      year: 2024,
       name: "Basic Python Training",
       institute: "VHS Brandenburg a. d. Havel",
       info: [
-        { name: "", info: "- functions, variables, operators, loops and arrays" },
-        { name: "", info: "- classes, constructors and destructors, simple and complex inheritance, polymophism" },
+        {
+          name: "",
+          info: "- functions, variables, operators, loops and arrays",
+        },
+        {
+          name: "",
+          info: "- classes, constructors and destructors, simple and complex inheritance, polymophism",
+        },
         { name: "", info: "- create simple programs" },
       ],
     },
     {
-      id: 1,
-      year: 2025,
+      id: 3,
+      year: 2009,
       name: "Bachelor of Arts - Social Work",
       institute: "Hochschule Niederrhein",
-      info: [{name: "", info: ""}],
+      info: [{ name: "", info: "" }],
     },
   ];
 
   return (
     <>
-      <div className="aboutContainer">
-        <h2>About</h2>
+      <div className="aboutWrapper">
+        <div className="aboutContainer">
+          <h2>About</h2>
 
-        <div className="photo"></div>
+          <div className="photo"></div>
 
-        <div className="facts">
-          <ul>
-            <div className="facts_ul">
-              <li>Name:</li>
-              <li>Judith Bohmann</li>
+          <div className="facts">
+            <ul>
+              <div className="facts_ul">
+                <li>Name:</li>
+                <li>Judith Bohmann</li>
+              </div>
+
+              <div className="facts_ul">
+                <li>Based in:</li>
+                <li>Potsdam, Germany</li>
+              </div>
+
+              <div className="facts_ul">
+                <li>Mail:</li>
+                <li>ju.bohmann@gmx.de</li>
+              </div>
+
+              <div className="facts_ul">
+                <li>Mobil:</li>
+                <li>+49 176 61 89 74 52 </li>
+              </div>
+            </ul>
+          </div>
+
+          <div className="skills">
+            <h3>Skills</h3>
+            <h4>LANGUAGES</h4>
+            <ul className="skillList">
+              {languages.map((el) => (
+                <li key={el.id}>
+                  {el.name}{" "}
+                  <div className="skill-level">
+                    {Array.from({ length: el.lvl }).map((_, index) => (
+                      <div key={index} className="level-box"></div>
+                    ))}
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <h4>LIBRARIES</h4>
+            <ul className="skillList">
+              {libraries.map((el) => (
+                <li key={el.id}>
+                  {el.name}{" "}
+                  <div className="skill-level">
+                    {Array.from({ length: el.lvl }).map((_, index) => (
+                      <div key={index} className="level-box"></div>
+                    ))}
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <h4>BACKEND</h4>
+            <ul className="skillList">
+              {backend.map((el) => (
+                <li key={el.id}>
+                  {el.name}{" "}
+                  <div className="skill-level">
+                    {Array.from({ length: el.lvl }).map((_, index) => (
+                      <div key={index} className="level-box"></div>
+                    ))}
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <h4>TOOLS</h4>
+            <ul className="skillList">
+              {tools.map((el) => (
+                <li key={el.id}>
+                  {el.name}{" "}
+                  <div className="skill-level">
+                    {Array.from({ length: el.lvl }).map((_, index) => (
+                      <div key={index} className="level-box"></div>
+                    ))}
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <ul></ul>
+          </div>
+
+          <div className="quali">
+            <h3>Qualifications</h3>
+            <ul className="qualiUl">
+              {qualis.map((el) => (
+                <li key={el.name} className = {`qualiLi${el.id}`}>
+                  <div className="qualiYear">
+                    <span>-</span> {el.year} <span>-</span>
+                  </div>
+                  <div className="qualiName">{el.name}</div>
+                  <div className="qualiInst">{el.institute}</div>
+                  <div className="qualiInfo">
+                    {el.info.map((ele, index) => (
+                      <div key={index}>
+                        <p className="infoName">{ele.name}</p>
+                        <p className="infoInfo">{ele.info}</p>
+                      </div>
+                    ))}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="xp">
+            <h3>Professional experience</h3>
+            <h4>Motognosis GmbH</h4>
+            <div>
+              <span>-</span> 2020 - 2024 <span>-</span>
             </div>
-
-            <div className="facts_ul">
-              <li>Based in:</li>
-              <li>Potsdam, Germany</li>
-            </div>
-
-            <div className="facts_ul">
-              <li>Mail:</li>
-              <li>ju.bohmann@gmx.de</li>
-            </div>
-
-            <div className="facts_ul">
-              <li>Mobil:</li>
-              <li>+49 176 61 89 74 52 </li>
-            </div>
-          </ul>
-        </div>
-
-        <div className="skills">
-          <h3>Skills</h3>
-          <h4>LANGUAGES</h4>
-          <ul className="skillList">
-            {languages.map((el) => (
-              <li key={el.id}>
-                {el.name}{" "}
-                <div className="skill-level">
-                  {Array.from({ length: el.lvl }).map((_, index) => (
-                    <div key={index} className="level-box"></div>
-                  ))}
-                </div>
-              </li>
-            ))}
-          </ul>
-          <h4>LIBRARIES</h4>
-          <ul className="skillList">
-            {libraries.map((el) => (
-              <li key={el.id}>
-                {el.name}{" "}
-                <div className="skill-level">
-                  {Array.from({ length: el.lvl }).map((_, index) => (
-                    <div key={index} className="level-box"></div>
-                  ))}
-                </div>
-              </li>
-            ))}
-          </ul>
-          <h4>BACKEND</h4>
-          <ul className="skillList">
-            {backend.map((el) => (
-              <li key={el.id}>
-                {el.name}{" "}
-                <div className="skill-level">
-                  {Array.from({ length: el.lvl }).map((_, index) => (
-                    <div key={index} className="level-box"></div>
-                  ))}
-                </div>
-              </li>
-            ))}
-          </ul>
-          <h4>TOOLS</h4>
-          <ul className="skillList">
-            {tools.map((el) => (
-              <li key={el.id}>
-                {el.name}{" "}
-                <div className="skill-level">
-                  {Array.from({ length: el.lvl }).map((_, index) => (
-                    <div key={index} className="level-box"></div>
-                  ))}
-                </div>
-              </li>
-            ))}
-          </ul>
-          <ul></ul>
-        </div>
-
-        <div className="quali">
-          <h3>Qualifications</h3>
-          <ul>
-            {qualis.map((el) => (
-              <li key={el.name}>
-                <div className="qualiYear">
-                  <span>-</span> {el.year} <span>-</span>
-                </div>
-                <div className="qualiName">{el.name}</div>
-                <div className="qualiInst">{el.institute}</div>
-                <div className="qualiInfo">
-                  {el.info.map((ele, index) => (
-                    <div key = {index}>
-                    <p className = "infoName">{ele.name}</p>
-                    <p className = "infoInfo">{ele.info}</p>
-                    </div>
-                  ))}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="xp">
-          <h3>Professional experience</h3>
-          <h4>Motognosis GmbH</h4>
-          <div><span>-</span> 2020 - 2024 <span>-</span></div>
-          <p>
-            - Implementation of the QM for the medical device 'Amsa' according to
-            ISO 13485
-          </p>
-          <p>
-            - Establisment of the IT infrastrusture - as well as data and quality
-            assurance processes for a study of the Charité with 150 patients
-          </p>
-          <p>
-            - Development of algorithmic analyses and measurement data analyses in
-            medical studies in the field of motion analysis
-          </p>
+            <p>
+              - Implementation of the QM for the medical device 'Amsa' according
+              to ISO 13485
+            </p>
+            <p>
+              - Establisment of the IT infrastrusture - as well as data and
+              quality assurance processes for a study of the Charité with 150
+              patients
+            </p>
+            <p>
+              - Development of algorithmic analyses and measurement data
+              analyses in medical studies in the field of motion analysis
+            </p>
+          </div>
         </div>
       </div>
     </>

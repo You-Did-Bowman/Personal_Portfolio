@@ -4,14 +4,17 @@
 
 .portfolioContainer {
   padding: $genericPadding 0;
-  
   width: 70vw;
   margin: 0 auto;
 
   h2 {
     color: $yellow;
     text-align: center;
+  }
 
+  h3 {
+    padding: $genericPadding;
+    text-align: center;
   }
 
   a {
@@ -22,16 +25,24 @@
     padding-top: $genericPadding;
   }
 
+  .carouselItem {
+    padding: 0 $genericPadding;
+    
+    img {
+      border-radius: 25px;
+    }
+  }
+
   .carousel-indicators {
     margin-bottom: -0.5rem;
   }
 
   .carousel-control-prev {
-    left: -2rem;
+    left: -3.3rem;
   }
 
   .carousel-control-next {
-    right: -2rem;
+    right: -3.3rem;
   }
 
   .portDesc {
@@ -39,3 +50,4 @@
   }
 }
 
+ 
