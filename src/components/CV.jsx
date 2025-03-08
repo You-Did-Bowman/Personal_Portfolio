@@ -6,7 +6,7 @@ function CV() {
     { title: "Certificate: Python Course (German)", link: "/downloads/2024_Teilnahmebescheinigung_Programmieren mit Pyhton_Bohmann, Judith.pdf" },
   ];
   return (
-    <>
+    <div className = "cvWrapper">
       <div className="cvContainer">
         <h2>Downloads</h2>
         <ul>
@@ -22,7 +22,7 @@ function CV() {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 

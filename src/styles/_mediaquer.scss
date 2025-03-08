@@ -1,103 +1,120 @@
 @media screen and (min-width: 768px) {
-    .hContainer {
-        height: 200px;
-        background-size: cover;
-    }
+  .hContainer {
+    height: 200px;
+    background-size: cover;
+  }
 
-    /* ----- About ------ */
+  /* ----- About ------ */
 
-    .aboutWrapper {
-        background-image: url("../../public/bg_black_9.jpg");
-        background-size: cover;
-    }
+  .aboutWrapper {
+    background-image: url("../../public/bg_black_9.jpg");
+    background-size: cover;
+  }
 
-    .aboutContainer {
-        padding: 2rem;
-        position: relative;
-       
-        min-width: 625px;
-        top: 4rem;
-        border-radius: 50px;
-        background-color: #413f3f46;
-        grid-template-columns: 1fr 1fr 1f;
-        gap: 2rem;
-        grid-template-areas: 
-        "h2 h2"
-        "photo skills"
-        "facts skills"
-        "quali quali "
-        "xp xp"
-        ;
-    }
+  .aboutContainer {
+    padding: 2rem;
+    position: relative;
 
-    .photo {
-        grid-area: photo;
-        align-self: center;
-    }
+    min-width: 625px;
+    top: 4rem;
+    border-radius: 50px;
+    background-color: #413f3f46;
+    grid-template-columns: 1fr 1fr 1f;
+    gap: 2rem;
+    grid-template-areas:
+      "h2 h2"
+      "photo skills"
+      "facts skills"
+      "quali quali "
+      "xp xp";
+  }
 
-    .facts {
-        grid-area: facts;
-        align-self: center;
-    }
+  .photo {
+    grid-area: photo;
+    align-self: center;
+  }
 
-    .skills {
-        grid-area: skills;
-    }
+  .facts {
+    grid-area: facts;
+    align-self: center;
+  }
 
-    .quali {
-        grid-area: quali;
+  .skills {
+    grid-area: skills;
+  }
 
-        .qualiUl {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+  .quali {
+    grid-area: quali;
+
+    .qualiUl {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
         "qualiLi1 qualiLi2 "
         "qualiLi1 qualiLi3";
-        
-        }
-
-        .qualiLi1 {
-            grid-area: qualiLi1;
-        }
-
-        .qualiLi2 {
-            grid-area: qualiLi2;
-            text-align: right;
-        }
-
-        .qualiLi3 {
-            grid-area: qualiLi3;
-            text-align: right;
-        }
     }
 
-    .xp {
-        grid-area: xp;
+    .qualiLi1 {
+      grid-area: qualiLi1;
     }
 
-     h2 {
-        grid-area: h2;
-     }        
+    .qualiLi2 {
+      grid-area: qualiLi2;
+      text-align: right;
+    }
 
-     /* ----- Portfolio ---- */
+    .qualiLi3 {
+      grid-area: qualiLi3;
+      text-align: right;
+    }
+  }
 
-     .portWrapper {
-        margin: 7rem 0;
-        background-image: url("../../public/bg_black_4.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position-x: right -200px;
-        height: 980px;
-     }
+  .xp {
+    grid-area: xp;
+  }
 
-     .portfolioContainer {
-        margin-left: 4rem;
-        height: 880px;
-        width: 50vw;
-        border-radius: 50px;
-        background-color: #413f3f46;
+  h2 {
+    grid-area: h2;
+  }
 
-     }
+  /* ----- Portfolio ---- */
 
+  .portWrapper {
+    margin-top: 8rem;
+    background-image: url("../../public/bg_black_4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right -200px;
+    height: 980px;
+    box-shadow: inset 25px -17px 47px 25px #000000;
+  }
 
+  .portfolioContainer {
+    margin-left: 4rem;
+    height: 880px;
+    width: 50vw;
+    border-radius: 50px;
+    background-color: #413f3f46;
+    position: relative;
+    top: 50px;
+
+    .carousel {
+      padding-top: 2rem;
+    }
+  }
+
+  /* ----- Download ----- */
+
+  .cvWrapper {
+    margin-top: 4rem;
+    background-image: url("../../public/bg_black_7.jpg");
+    background-size: cover;
+    height: 500px;
+
+    .cvContainer {
+        width: 100%;
+        text-align: right;
+        padding-right: 2rem;
+    }
+  }
 }
