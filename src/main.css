@@ -46,6 +46,9 @@
   padding-top: 1rem;
   width: 200px;
 }
+.aboutContainer ul {
+  padding-left: 0;
+}
 .aboutContainer h2 {
   color: #FFED00;
   text-align: center;
@@ -99,7 +102,8 @@
 .aboutContainer .quali ul {
   list-style: none;
 }
-.aboutContainer .quali ul .qualiYear, .aboutContainer .quali ul .qualiName {
+.aboutContainer .quali ul .qualiYear,
+.aboutContainer .quali ul .qualiName {
   font-weight: bold;
 }
 .aboutContainer .quali ul .qualiInfo {
@@ -122,6 +126,11 @@
   margin-top: 1rem;
   padding-top: 1rem;
 }
+.aboutContainer .xp h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
 .aboutContainer .xp span {
   font-weight: bold;
   color: #FFED00;
@@ -131,8 +140,28 @@
   padding: 0.7rem 0;
 }
 
-img {
+/* 
+- carussel für portfolio: https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/
+*/
+.portfolioContainer {
+  padding-top: 1rem;
   width: 200px;
+  margin: 0 auto;
+}
+.portfolioContainer .carousel {
+  padding-top: 1rem;
+}
+.portfolioContainer .carousel-indicators {
+  margin-bottom: -0.5rem;
+}
+.portfolioContainer .carousel-control-prev {
+  left: -2rem;
+}
+.portfolioContainer .carousel-control-next {
+  right: -2rem;
+}
+.portfolioContainer .portDesc {
+  text-align: justify;
 }
 
 .footerContainer {

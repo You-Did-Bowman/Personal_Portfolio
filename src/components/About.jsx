@@ -1,7 +1,6 @@
 /* 
 - Skills mit gelben quadraten darstellen. höchstens 5 ... leere quadrate vllt grau?
 - return noch in weiter Components zerpflücken?
-- carussel für portfolio: https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/
 */
 
 function About() {
@@ -167,18 +166,18 @@ function About() {
                 <div className="qualiName">{el.name}</div>
                 <div className="qualiInst">{el.institute}</div>
                 <div className="qualiInfo">
-                  {el.info.map((ele) => (
-                    <>
+                  {el.info.map((ele, index) => (
+                    <div key = {index}>
                     <p className = "infoName">{ele.name}</p>
                     <p className = "infoInfo">{ele.info}</p>
-                    </>
+                    </div>
                   ))}
                 </div>
               </li>
             ))}
           </ul>
         </div>
-        
+
         <div className="xp">
           <h3>Professional experience</h3>
           <h4>Motognosis GmbH</h4>

@@ -1,3 +1,30 @@
-img {
-    width: 200px
+/* 
+- carussel für portfolio: https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/
+*/
+
+.portfolioContainer {
+  padding-top: $genericPadding;
+  width: 200px;
+  margin: 0 auto;
+
+  .carousel {
+    padding-top: $genericPadding;
+  }
+
+  .carousel-indicators {
+    margin-bottom: -0.5rem;
+  }
+
+  .carousel-control-prev {
+    left: -2rem;
+  }
+
+  .carousel-control-next {
+    right: -2rem;
+  }
+
+  .portDesc {
+    text-align: justify;
+  }
 }
+

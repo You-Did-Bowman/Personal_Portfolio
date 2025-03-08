@@ -1,3 +1,7 @@
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function Portfolio() {
   const portfolio = [
     {
@@ -46,11 +50,7 @@ function Portfolio() {
     {
       id: 4,
       name: "MASTERMIND CLI-Game ",
-      description: `This was my final project for the “Programming Basics” module at my school. This game only works inside the Terminal. In Mastermind, the coder creates a secret number combination that the decryptor must guess. After each attempt, the decryptor gets feedback with 🔴, 🟡 and 🟢.
-        🔴 = indicates how many numbers do not exist in the solution
-        🟡 = indicates how many numbers appear in the solution but are in the wrong place
-        🟢 = indicates how many numbers are on their right place
-        The decryptor has to find out the combination in as few attempts as possible.`,
+      description: `This was my final project for the “Programming Basics” module at my school. This game only works inside the Terminal. In Mastermind, the coder creates a secret number combination that the decryptor must guess. After each attempt, the decryptor gets feedback with 🔴, 🟡 and 🟢. The decryptor has to find out the combination in as few attempts as possible.`,
       image:
         "https://raw.githubusercontent.com/You-Did-Bowman/MASTERMIND_digital/main/images/Screenshot_Mastermind_instructions.png",
       webpageLink: "",
@@ -60,28 +60,26 @@ function Portfolio() {
   ];
 
   return (
-    <>
+    <div className="portfolioContainer">
       <h2>Portfolio</h2>
-      <div className="portContainer">
-          {portfolio.map((proj) => (
-            <div key={proj.id}>
+      <Carousel className = "carousel">
+        {portfolio.map((proj) => (
+          <Carousel.Item key={proj.id}>
+            <img
+              className="d-block w-100"
+              src={proj.image}
+              alt={proj.name}
+            />
+            <div className="caption">
               <h3>{proj.name}</h3>
-              <img src={proj.image} alt={proj.name} />
-              <p>{proj.description}</p>
-              <p> Link: <a href={proj.webpageLink} target="_blank">{proj.name}</a></p>
-              <p> <a href={proj.githubLink} target="_blank">Github</a></p>
-
-              <h3>Stack</h3>
-              <ul>
-                {proj.technics.map((el) => (
-                  <li key = {el}>{el}</li>
-                ))}
-              </ul>
-
-              </div>
-          ))}
-      </div>
-    </>
+              <p className = "portDesc">{proj.description}</p>
+              <p><a href = {proj.webpageLink}>{proj.name}</a></p>
+              <p><a href = {proj.githubLink}>GitHub Repo</a></p>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
   );
 }
 

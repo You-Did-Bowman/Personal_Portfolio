@@ -1,6 +1,6 @@
 /* 
 - go up links 
-- vllt arrays aus portfolio, about als context?
+- vllt arrays aus components als context?
 */
 
 import Footer from "./components/Footer.jsx";
