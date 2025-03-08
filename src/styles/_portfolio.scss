@@ -3,9 +3,20 @@
 */
 
 .portfolioContainer {
-  padding-top: $genericPadding;
+  padding: $genericPadding 0;
+  margin: $genericPadding 0;
   width: 200px;
   margin: 0 auto;
+
+  h2 {
+    color: $yellow;
+    text-align: center;
+
+  }
+
+  a {
+    color: $yellow;
+  }
 
   .carousel {
     padding-top: $genericPadding;

@@ -144,9 +144,17 @@
 - carussel für portfolio: https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/
 */
 .portfolioContainer {
-  padding-top: 1rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
   width: 200px;
   margin: 0 auto;
+}
+.portfolioContainer h2 {
+  color: #FFED00;
+  text-align: center;
+}
+.portfolioContainer a {
+  color: #FFED00;
 }
 .portfolioContainer .carousel {
   padding-top: 1rem;
@@ -166,6 +174,26 @@
 
 .footerContainer {
   border: 2px solid purple;
+}
+
+.cvContainer {
+  margin: 1rem auto;
+  padding: 1rem 0;
+  width: 200px;
+}
+.cvContainer h2 {
+  color: #FFED00;
+  text-align: center;
+}
+.cvContainer ul {
+  padding: 0;
+  list-style: none;
+}
+.cvContainer ul li {
+  padding-top: 1rem;
+}
+.cvContainer ul li a {
+  color: #FFED00;
 }
 
 body {

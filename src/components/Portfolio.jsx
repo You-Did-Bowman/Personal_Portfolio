@@ -73,8 +73,8 @@ function Portfolio() {
             <div className="caption">
               <h3>{proj.name}</h3>
               <p className = "portDesc">{proj.description}</p>
-              <p><a href = {proj.webpageLink}>{proj.name}</a></p>
-              <p><a href = {proj.githubLink}>GitHub Repo</a></p>
+              <p><a className = "portLink" href = {proj.webpageLink}>{proj.name}</a></p>
+              <p><a className = "portLink" href = {proj.githubLink}>GitHub Repo</a></p>
             </div>
           </Carousel.Item>
         ))}

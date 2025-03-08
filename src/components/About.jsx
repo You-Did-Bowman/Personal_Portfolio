@@ -92,7 +92,7 @@ function About() {
             </div>
 
             <div className="facts_ul">
-              <li>Mobile:</li>
+              <li>Mobil:</li>
               <li>+49 176 61 89 74 52 </li>
             </div>
           </ul>
