@@ -1,3 +1,11 @@
 .footerContainer {
-    border: 2px solid purple;
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: $yellow;
+ padding: .5rem 0;
+
+  a {
+    color: black
+  }
 }

@@ -173,7 +173,13 @@
 }
 
 .footerContainer {
-  border: 2px solid purple;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FFED00;
+  padding: 0.5rem 0;
+}
+.footerContainer a {
+  color: black;
 }
 
 .cvContainer {
