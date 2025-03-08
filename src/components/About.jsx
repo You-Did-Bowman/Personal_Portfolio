@@ -1,6 +1,7 @@
 /* 
 - Skills mit gelben quadraten darstellen. höchstens 5 ... leere quadrate vllt grau?
 - return noch in weiter Components zerpflücken?
+- carussel für portfolio: https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/
 */
 
 function About() {
@@ -21,6 +22,50 @@ function About() {
   const backend = skills.filter((el) => el.type === "backend");
   const tools = skills.filter((el) => el.type === "tools");
   //console.log(libraries);
+
+  const qualis = [
+    {
+      id: 1,
+      year: 2025,
+      name: "Fullstack WebDev",
+      institute: "DigitalCareerInstitute GmbH",
+      info: [
+        { name: "UI Basics (9 weeks)", info: "- HTML, CSS, SASS, Bootstrap" },
+        { name: "Programm Basics (9 weeks)", info: "- Javascript" },
+        {
+          name: "Single Page Application (9 weeks)",
+          info: "- DOM, APIs, JSON, React.js, JSX templating",
+        },
+        {
+          name: "Backend (9 weeks)",
+          info: "- Node.js, Express.js, NOSQL, SQL, MongoDB",
+        },
+        {
+          name: "Final Project (9 weeks)",
+          info: "- plan, create and present a software project",
+        },
+        { name: "Internship (9 weeks)", info: "" },
+      ],
+    },
+    {
+      id: 1,
+      year: 2025,
+      name: "Basic Python Training",
+      institute: "VHS Brandenburg a. d. Havel",
+      info: [
+        { name: "", info: "- functions, variables, operators, loops and arrays" },
+        { name: "", info: "- classes, constructors and destructors, simple and complex inheritance, polymophism" },
+        { name: "", info: "- create simple programs" },
+      ],
+    },
+    {
+      id: 1,
+      year: 2025,
+      name: "Bachelor of Arts - Social Work",
+      institute: "Hochschule Niederrhein",
+      info: [{name: "", info: ""}],
+    },
+  ];
 
   return (
     <>
@@ -94,7 +139,7 @@ function About() {
                 </div>
               </li>
             ))}
-            </ul>
+          </ul>
           <h4>TOOLS</h4>
           <ul className="skillList">
             {tools.map((el) => (
@@ -107,50 +152,47 @@ function About() {
                 </div>
               </li>
             ))}
-            </ul>
+          </ul>
           <ul></ul>
         </div>
 
         <div className="quali">
           <h3>Qualifications</h3>
           <ul>
-            <li>
-              - 2009 -
-              <br />
-              Bachelore of Arts - Social Work
-              <br />
-              Hochschule Niederrhein
-            </li>
-            <li>
-              - 2024 -
-              <br />
-              Basic Python Training
-              <br />
-              creating simple programmes in python
-            </li>
-            <li>
-              - 2025 -
-              <br />
-              WebDev Training
-              <br />
-              CSS/HTML, Javascript, React and much more ...
-            </li>
+            {qualis.map((el) => (
+              <li key={el.name}>
+                <div className="qualiYear">
+                  <span>-</span> {el.year} <span>-</span>
+                </div>
+                <div className="qualiName">{el.name}</div>
+                <div className="qualiInst">{el.institute}</div>
+                <div className="qualiInfo">
+                  {el.info.map((ele) => (
+                    <>
+                    <p className = "infoName">{ele.name}</p>
+                    <p className = "infoInfo">{ele.info}</p>
+                    </>
+                  ))}
+                </div>
+              </li>
+            ))}
           </ul>
         </div>
+        
         <div className="xp">
           <h3>Professional experience</h3>
           <h4>Motognosis GmbH</h4>
-          <p>2020 - 2024</p>
+          <div><span>-</span> 2020 - 2024 <span>-</span></div>
           <p>
-            Implementation of the QM for the medical device 'Amsa' according to
+            - Implementation of the QM for the medical device 'Amsa' according to
             ISO 13485
           </p>
           <p>
-            Establisment of the IT infrastrusture - as well as data and quality
+            - Establisment of the IT infrastrusture - as well as data and quality
             assurance processes for a study of the Charité with 150 patients
           </p>
           <p>
-            Development of algorithmic analyses and measurement data analyses in
+            - Development of algorithmic analyses and measurement data analyses in
             medical studies in the field of motion analysis
           </p>
         </div>

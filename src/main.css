@@ -38,12 +38,13 @@
 - border für das bild https://www.youtube.com/watch?v=-VOUK-xFAyk // https://codepen.io/kevinpowell/pen/QWVKZjx
 */
 .aboutContainer {
-  margin-top: 2rem;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
+  width: 200px;
 }
 .aboutContainer h2 {
   color: #FFED00;
@@ -90,6 +91,44 @@
   width: 10px;
   height: 10px;
   background-color: #FFED00;
+}
+.aboutContainer .quali {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.aboutContainer .quali ul {
+  list-style: none;
+}
+.aboutContainer .quali ul .qualiYear, .aboutContainer .quali ul .qualiName {
+  font-weight: bold;
+}
+.aboutContainer .quali ul .qualiInfo {
+  padding: 0.7rem 0;
+}
+.aboutContainer .quali ul .infoName {
+  font-weight: bold;
+}
+.aboutContainer .quali ul .infoInfo {
+  font-weight: 200;
+}
+.aboutContainer .quali ul span {
+  color: #FFED00;
+  font-weight: bold;
+}
+.aboutContainer .quali ul li {
+  padding-top: 1rem;
+}
+.aboutContainer .xp {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.aboutContainer .xp span {
+  font-weight: bold;
+  color: #FFED00;
+}
+.aboutContainer .xp p {
+  font-weight: 200;
+  padding: 0.7rem 0;
 }
 
 img {

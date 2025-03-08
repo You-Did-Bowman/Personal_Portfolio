@@ -3,12 +3,13 @@
 */
 
 .aboutContainer {
-  margin-top: 2rem;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: $genericPadding;
+  width: 200px;
 
   h2 {
     color: $yellow;
@@ -66,6 +67,54 @@
         height: 10px;
         background-color: $yellow;
       }
+    }
+  }
+
+  .quali {
+    margin-top: $genericPadding;
+    padding-top: $genericPadding;
+
+    ul {
+        
+        list-style: none;
+
+        .qualiYear, .qualiName {
+          font-weight: bold;
+        }
+
+        .qualiInfo {
+          padding: .7rem 0;
+        }
+
+         .infoName {
+          font-weight: bold;
+         }
+
+         .infoInfo {
+          font-weight: 200;
+         }
+
+        span {
+          color: $yellow;
+          font-weight: bold;
+        }
+
+        li {
+          padding-top: $genericPadding;
+        }
+    }
+  }
+
+  .xp {
+    margin-top: $genericPadding;
+    padding-top: $genericPadding;
+    span {
+      font-weight: bold;
+      color: $yellow;
+    }
+    p {
+      font-weight: 200;
+      padding: .7rem 0;
     }
   }
 }
