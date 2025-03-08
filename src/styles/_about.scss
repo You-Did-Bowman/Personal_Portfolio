@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   padding-top: $genericPadding;
-  width: 200px;
+  width: 70vw;
 
   ul {
     padding-left: 0;
@@ -33,6 +33,7 @@
 
   .facts {
     padding-top: $genericPadding;
+    
     .facts_ul {
       padding-top: $genericPadding;
 
@@ -49,6 +50,7 @@
   .skills {
     margin-top: $genericPadding;
     padding-top: $genericPadding;
+    width: 100%;
 
     h4 {
       @extend %underline;

@@ -44,7 +44,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
-  width: 200px;
+  width: 70vw;
 }
 .aboutContainer ul {
   padding-left: 0;
@@ -75,6 +75,7 @@
 .aboutContainer .skills {
   margin-top: 1rem;
   padding-top: 1rem;
+  width: 100%;
 }
 .aboutContainer .skills h4 {
   padding-top: 1rem;
@@ -145,8 +146,7 @@
 */
 .portfolioContainer {
   padding: 1rem 0;
-  margin: 1rem 0;
-  width: 200px;
+  width: 70vw;
   margin: 0 auto;
 }
 .portfolioContainer h2 {
@@ -185,7 +185,7 @@
 .cvContainer {
   margin: 1rem auto;
   padding: 1rem 0;
-  width: 200px;
+  width: 70vw;
 }
 .cvContainer h2 {
   color: #FFED00;

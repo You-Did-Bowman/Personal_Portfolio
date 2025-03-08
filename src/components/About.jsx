@@ -74,7 +74,6 @@ function About() {
         <div className="photo"></div>
 
         <div className="facts">
-          <h3>Facts</h3>
           <ul>
             <div className="facts_ul">
               <li>Name:</li>
