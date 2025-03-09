@@ -17,7 +17,7 @@
       padding-top: $genericPadding;
 
       a {
-        color: $yellow;
+       @extend %link;
       }
     }
   }

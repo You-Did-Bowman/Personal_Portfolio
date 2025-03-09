@@ -2,3 +2,9 @@
   text-decoration: underline 2px;
   text-decoration-color: $yellow;
 }
+
+%link {
+  color: $yellow;
+  text-decoration: underline;
+  text-decoration-color: white;
+}

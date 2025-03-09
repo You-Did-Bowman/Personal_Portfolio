@@ -18,7 +18,7 @@
   }
 
   a {
-    color: $yellow;
+    @extend %link;
   }
 
   .carousel {
