@@ -200,7 +200,7 @@
 
   /* ----- Portfolio ---- */
   .portWrapper {
-    margin-top: 8rem;
+    margin: 8rem 0;
     background-image: url("../../public/bg_black_4.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -236,13 +236,12 @@
 
   /* ----- Download ----- */
   .cvWrapper {
-    
-    margin-top: 4rem;
     background-image: url("../../public/bg_black_7.jpg");
     background-size: cover;
     height: 500px;
 
     .cvContainer {
+
       width: 80%;
       height: 500px;
       text-align: right;
