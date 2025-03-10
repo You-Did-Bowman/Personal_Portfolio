@@ -20,8 +20,6 @@
     />
 
     <title>Judith Bohmann</title>
-    <script type="module" crossorigin src="/assets/index-ConvYFRD.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CIOFFiXF.css">
   </head>
   <body>
     <div id="root"></div>
