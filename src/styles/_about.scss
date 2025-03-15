@@ -7,7 +7,6 @@
   display: grid;
   padding-top: $genericPadding;
   width: 70%;
-  
 
   ul {
     padding-left: 0;
@@ -30,6 +29,7 @@
     height: 200px;
     border-radius: 100%;
     margin: $genericPadding auto;
+    box-shadow: 0px 0px 50px 5px #fff65550;
   }
 
   .facts {
@@ -142,3 +142,22 @@
     }
   }
 }
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1px;
+  height: 50%;
+}
+
+.el {
+  position: absolute;
+  opacity: 1;
+  width: 2px;
+  height: 100px;
+  transform-origin: 50% 100%;
+  background: white;
+}
+

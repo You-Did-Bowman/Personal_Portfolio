@@ -17,10 +17,6 @@
   text-decoration-color: white;
 }
 
-.portfolioContainer:hover {
-  box-shadow: 10px 10px 50px rgba(255, 255, 0, 0.0901960784);
-}
-
 .hContainer {
   background-image: url("/banner.png");
   background-size: 147vw;
@@ -50,7 +46,7 @@
   margin: 0 auto;
   display: grid;
   padding-top: 1rem;
-  width: 70vw;
+  width: 70%;
 }
 .aboutContainer ul {
   padding-left: 0;
@@ -71,6 +67,7 @@
   height: 200px;
   border-radius: 100%;
   margin: 1rem auto;
+  box-shadow: 0px 0px 50px 5px rgba(255, 246, 85, 0.3137254902);
 }
 .aboutContainer .facts {
   margin: 0 auto;
@@ -156,9 +153,24 @@
   padding: 0.7rem 0;
 }
 
-/* 
-- carussel für portfolio: https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/
-*/
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1px;
+  height: 50%;
+}
+
+.el {
+  position: absolute;
+  opacity: 1;
+  width: 2px;
+  height: 100px;
+  transform-origin: 50% 100%;
+  background: white;
+}
+
 .portfolioContainer {
   padding: 1rem 0;
   width: 70vw;
@@ -173,7 +185,7 @@
   text-align: center;
 }
 .portfolioContainer .carousel {
-  padding-top: 1rem;
+  padding: 1rem;
 }
 .portfolioContainer .carouselItem {
   padding: 0 1rem;
@@ -227,22 +239,15 @@
     background-size: cover;
   }
   /* ----- About ------ */
-  .aboutWrapper {
-    background-image: url("../../public/bg_black_9.jpg");
-    background-size: cover;
-    height: 2000px;
-    box-shadow: inset 25px -17px 47px 25px #000000;
-  }
   .aboutWrapper .aboutContainer {
+    margin: 2rem auto;
     padding: 2rem;
-    position: relative;
-    width: 85vw;
-    top: 4rem;
+    width: 85%;
     border-radius: 50px;
     background-color: rgba(65, 63, 63, 0.2745098039);
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    grid-template-areas: "h2 h2 h2" ". photo ." "facts facts skills" "quali quali quali" "xp xp xp";
+    grid-template-areas: "h2 h2 h2" "photo . skills" "facts facts skills" "quali quali quali" "xp xp xp";
   }
   .aboutWrapper .photo {
     grid-area: photo;
@@ -283,7 +288,7 @@
   }
   /* ----- Portfolio ---- */
   .portWrapper .portfolioContainer {
-    width: 80vw;
+    width: 85%;
     border-radius: 50px;
     background-color: rgba(65, 63, 63, 0.2745098039);
   }
@@ -295,6 +300,7 @@
     justify-content: center;
   }
   .portWrapper .portfolioContainer .cards .cardItem {
+    padding: 0 1rem;
     width: 400px;
   }
   .portWrapper .portfolioContainer .cards .cardItem img {
@@ -328,17 +334,10 @@
     background-size: cover;
   }
   /* ----- About ------ */
-  .aboutWrapper {
-    background-image: url("../../public/bg_black_9.jpg");
-    background-size: cover;
-    height: 1600px;
-    box-shadow: inset 25px -17px 47px 25px #000000;
-  }
   .aboutWrapper .aboutContainer {
+    margin: 2rem auto;
     padding: 2rem;
-    position: relative;
-    width: 85vw;
-    top: 4rem;
+    width: 85%;
     border-radius: 50px;
     background-color: rgba(65, 63, 63, 0.2745098039);
     grid-template-columns: 1fr 1fr 1fr;
@@ -388,7 +387,7 @@
     grid-area: h2;
   }
   .portWrapper .portfolioContainer {
-    width: 80vw;
+    width: 85%;
     border-radius: 50px;
     background-color: rgba(65, 63, 63, 0.2745098039);
   }

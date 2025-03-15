@@ -7,13 +7,9 @@
 
   /* ----- About ------ */
   .aboutWrapper {
-    background-image: url("../../public/bg_black_9.jpg");
-    background-size: cover;
-    height: 2000px;
-    box-shadow: inset 25px -17px 47px 25px #000000;
 
     .aboutContainer {
-      border: 2px solid red;
+      margin: 2rem auto;
       padding: 2rem;
       width: 85%;
       border-radius: 50px;
@@ -22,7 +18,7 @@
       gap: 2rem;
       grid-template-areas:
         "h2 h2 h2"
-      
+        "photo . skills"
         "facts facts skills"
         "quali quali quali"
         "xp xp xp";
@@ -48,9 +44,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
-        "qualiLi1 qualiLi1 qualiLi1"
-        "qualiLi2 qualiLi2 qualiLi2"
-        "qualiLi3 qualiLi3 qualiLi3";
+        "qualiLi1 qualiLi2 qualiLi3";
         justify-content: center;
       }
 
@@ -82,7 +76,7 @@
   /* ----- Portfolio ---- */
   .portWrapper {
     .portfolioContainer {
-      width: 80%;
+      width: 85%;
       border-radius: 50px;
       background-color: #413f3f46;
 
@@ -94,6 +88,7 @@
         justify-content: center;
 
         .cardItem {
+          padding: 0 1rem;
           width: 400px;
 
           img {
@@ -137,12 +132,9 @@
 
   /* ----- About ------ */
   .aboutWrapper {
-    background-image: url("../../public/bg_black_9.jpg");
-    background-size: cover;
-    height: 1600px;
-    box-shadow: inset 25px -17px 47px 25px #000000;
 
     .aboutContainer {
+      margin: 2rem auto;
       padding: 2rem;
       width: 85%;
       border-radius: 50px;
@@ -153,10 +145,6 @@
         "h2 h2 h2"
         "photo facts skills"
         "quali quali xp";
-    }
-
-    .aboutContainer:hover {
-      @extend %wrapperShadow;
     }
 
     .photo {
@@ -214,7 +202,7 @@
 
   .portWrapper {
     .portfolioContainer {
-      width: 80%;
+      width: 85%;
       border-radius: 50px;
       background-color: #413f3f46;
 
@@ -242,10 +230,6 @@
           }
         }
       }
-    }
-
-    .portfolioContainer:hover {
-      @extend %wrapperShadow;
     }
   }
 

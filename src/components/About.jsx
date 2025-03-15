@@ -16,7 +16,7 @@ function About() {
     { id: 8, name: "SASS", lvl: 3, type: "tools" },
     { id: 9, name: "BOOTSTRAP", lvl: 2, type: "library" },
     { id: 10, name: "ANIME", lvl: 2, type: "library" },
-    {id: 11, name: "EXPRESS", lvl: 2, type: "backend"},
+    { id: 11, name: "EXPRESS", lvl: 2, type: "backend" },
   ];
 
   const languages = skills.filter((el) => el.type === "language");
@@ -79,7 +79,7 @@ function About() {
     targets: ".level-box",
     scale: "1",
     rotate: "1turn",
-    duration: 6000,
+    duration: 5000,
     loop: true,
   });
 
@@ -88,6 +88,7 @@ function About() {
       <div className="aboutWrapper">
         <div className="aboutContainer">
           <h2>About</h2>
+          
           <div className="photo"></div>
 
           <div className="facts">
