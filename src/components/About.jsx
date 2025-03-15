@@ -76,36 +76,26 @@ function About() {
     <>
       <div className="aboutWrapper">
         <div className="aboutContainer">
+        
           <h2>About</h2>
-
           <div className="photo"></div>
 
           <div className="facts">
-            <ul>
-              <div className="facts_ul">
-                <li>Name:</li>
-                <li>Judith Bohmann</li>
-              </div>
-
-              <div className="facts_ul">
-                <li>Based in:</li>
-                <li>Potsdam, Germany</li>
-              </div>
-
-              <div className="facts_ul">
-                <li>Mail:</li>
-                <li>ju.bohmann@gmx.de</li>
-              </div>
-
-              <div className="facts_ul">
-                <li>Mobil:</li>
-                <li>+49 176 61 89 74 52 </li>
-              </div>
-            </ul>
+          Hello Hi, I'm <span>Judith Bohmann</span> – a web developer with a
+        strong focus on frontend technologies based in Potsdam. I love building user-friendly and
+        high-performance applications that are not only functional but also
+        enjoyable to use. 
+        <br /><br />
+        For me, the user always comes first – I strive to
+        create intuitive interfaces and smooth user experiences. I enjoy
+        collaborating with teams, exchanging ideas, and finding pragmatic
+        solutions to technical challenges. 
+        <br /><br />
+        If you're looking for a passionate
+        web developer with an eye for detail, I'd love to hear from you!
           </div>
 
           <div className="skills">
-            <h3>Skills</h3>
             <h4>LANGUAGES</h4>
             <ul className="skillList">
               {languages.map((el) => (

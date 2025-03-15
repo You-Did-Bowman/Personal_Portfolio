@@ -9,28 +9,28 @@
   .aboutWrapper {
     background-image: url("../../public/bg_black_9.jpg");
     background-size: cover;
+    height: 2000px;
+    box-shadow: inset 25px -17px 47px 25px #000000;
 
     .aboutContainer {
       padding: 2rem;
       position: relative;
-
-      min-width: 625px;
+      width: 85vw;
       top: 4rem;
       border-radius: 50px;
       background-color: #413f3f46;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
       grid-template-areas:
-        "h2 h2"
-        "photo skills"
-        "facts skills"
-        "quali quali "
-        "xp xp";
+        "h2 h2 h2"
+        ". photo ."
+        "facts facts skills"
+        "quali quali quali"
+        "xp xp xp";
     }
 
     .photo {
       grid-area: photo;
-      align-self: center;
     }
 
     .facts {
@@ -47,24 +47,24 @@
 
       .qualiUl {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-          "qualiLi1 qualiLi2 "
-          "qualiLi1 qualiLi3";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "qualiLi1 qualiLi2 qualiLi3";
+        justify-content: center;
       }
 
       .qualiLi1 {
         grid-area: qualiLi1;
+        margin: 0 auto;
       }
 
       .qualiLi2 {
         grid-area: qualiLi2;
-        text-align: right;
+        margin: 0 auto;
       }
 
       .qualiLi3 {
         grid-area: qualiLi3;
-        text-align: right;
+        margin: 0 auto;
       }
     }
 
@@ -79,25 +79,35 @@
 
   /* ----- Portfolio ---- */
   .portWrapper {
-    margin-top: 8rem;
-    background-image: url("../../public/bg_black_4.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: right -200px;
-    height: 980px;
-    box-shadow: inset 25px -17px 47px 25px #000000;
 
     .portfolioContainer {
-      margin-left: 4rem;
-      height: 880px;
-      width: 50vw;
+      width: 80vw;
       border-radius: 50px;
       background-color: #413f3f46;
-      position: relative;
-      top: 50px;
 
-      .carousel {
+      .cards {
         padding-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+        .cardItem {
+          width: 400px;
+          
+          img {
+            border-radius: 10px;
+          }
+
+          .cardList {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            font-weight: bold;
+          }
+        }
       }
     }
   }
@@ -120,7 +130,7 @@
 /* ----------------- DESKTOP VERSION -------------- */
 @media screen and (min-width: 1024px) {
   .hContainer {
-    height: 300px;
+    height: 200px;
     background-size: cover;
   }
 
@@ -128,11 +138,10 @@
   .aboutWrapper {
     background-image: url("../../public/bg_black_9.jpg");
     background-size: cover;
-    height: 2000px;
+    height: 1600px;
     box-shadow: inset 25px -17px 47px 25px #000000;
 
     .aboutContainer {
-      
       padding: 2rem;
       position: relative;
       width: 85vw;
@@ -144,20 +153,26 @@
       grid-template-areas:
         "h2 h2 h2"
         "photo facts skills"
-        "quali quali quali"
-        "xp xp xp";
+        "quali quali xp"
+        ;
     }
 
     .photo {
       grid-area: photo;
+      width: 300px;
+      height: 300px;
+      align-self: center;
     }
 
     .facts {
       grid-area: facts;
+      align-self: center;
     }
 
     .skills {
       grid-area: skills;
+      max-width: 250px;
+      margin: 0 auto;
     }
 
     .quali {
@@ -166,9 +181,8 @@
       .qualiUl {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-          "qualiLi1 qualiLi2 qualiLi3";
-          justify-content: center;
+        grid-template-areas: "qualiLi1 qualiLi2 qualiLi3";
+        justify-content: center;
       }
 
       .qualiLi1 {
@@ -189,7 +203,7 @@
 
     .xp {
       grid-area: xp;
-      padding: 0 4rem;
+   
     }
 
     h2 {
@@ -197,39 +211,37 @@
     }
   }
 
-  /* ----- Portfolio ---- */
   .portWrapper {
-    margin: 8rem 0;
-    background-image: url("../../public/bg_black_4.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: right -200px;
-    height: 980px;
-    box-shadow: inset 25px -17px 47px 25px #000000;
 
     .portfolioContainer {
-      margin-left: 4rem;
-      height: 880px;
-      width: 50vw;
+      width: 80vw;
       border-radius: 50px;
       background-color: #413f3f46;
-      position: relative;
-      top: 50px;
-      left: 50px;
 
-      .carousel {
+      .cards {
         padding-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
 
-        .carousel-control-prev {
-          left: -7rem;
-        }
-      
-        .carousel-control-next {
-          right: -7rem;
+        .cardItem {
+          width: 400px;
+          
+          img {
+            border-radius: 10px;
+          }
+
+          .cardList {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            font-weight: bold;
+          }
         }
       }
-
-
     }
   }
 
@@ -237,18 +249,16 @@
   .cvWrapper {
     background-image: url("../../public/bg_black_7.jpg");
     background-size: cover;
-    height: 500px;
+    margin-top: 5rem;
 
     .cvContainer {
-
       width: 80%;
-      height: 500px;
+      height: 400px;
       text-align: right;
       padding: 2rem;
       margin-right: 0;
       border-radius: 50px;
-      background: linear-gradient(20deg,#ffffff00 40%, #413f3f94 90%)
+      background: linear-gradient(20deg, #ffffff00 40%, #413f3f94 90%);
     }
   }
-
 }

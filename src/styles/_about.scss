@@ -115,6 +115,9 @@
   }
 
   .xp {
+    margin-top: $genericPadding;
+    padding-top: $genericPadding;
+
   
     h4 {
       font-size: 1.1rem;
@@ -132,4 +135,8 @@
       padding: 0.7rem 0;
     }
   }
+}
+
+.aboutContainer:hover {
+  @extend %wrapperShadow;
 }
