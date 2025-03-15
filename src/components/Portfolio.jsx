@@ -77,12 +77,12 @@ function Portfolio() {
                   ))}
                 </ul>
                 <p>
-                  <a className="portLink" href={proj.webpageLink}>
+                  <a className="portLink" href={proj.webpageLink} target="blank">
                     {proj.name}
                   </a>
                 </p>
                 <p>
-                  <a className="portLink" href={proj.githubLink}>
+                  <a className="portLink" href={proj.githubLink} target="blank">
                     GitHub Repo
                   </a>
                 </p>
