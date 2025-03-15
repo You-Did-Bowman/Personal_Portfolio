@@ -6,7 +6,7 @@
   margin: 0 auto;
   display: grid;
   padding-top: $genericPadding;
-  width: 70vw;
+  width: 70%;
   
 
   ul {
@@ -76,6 +76,12 @@
         height: 10px;
         background-color: $yellow;
       }
+
+      .filler-box {
+        width: 10px;
+        height: 10px;
+        background-color: gray;
+      }
     }
   }
 
@@ -135,8 +141,4 @@
       padding: 0.7rem 0;
     }
   }
-}
-
-.aboutContainer:hover {
-  @extend %wrapperShadow;
 }

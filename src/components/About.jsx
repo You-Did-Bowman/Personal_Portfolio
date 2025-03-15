@@ -2,18 +2,21 @@
 - Skills mit gelben quadraten darstellen. höchstens 5 ... leere quadrate vllt grau?
 - return noch in weiter Components zerpflücken?
 */
+import anime from "animejs/lib/anime.es.js";
 
 function About() {
   const skills = [
-    { id: 1, name: "JAVASCRIPT", lvl: 5, type: "language" },
-    { id: 2, name: "CSS", lvl: 4, type: "language" },
-    { id: 3, name: "HTML", lvl: 5, type: "language" },
+    { id: 1, name: "JAVASCRIPT", lvl: 4, type: "language" },
+    { id: 2, name: "CSS", lvl: 3, type: "language" },
+    { id: 3, name: "HTML", lvl: 4, type: "language" },
     { id: 4, name: "PYTHON", lvl: 2, type: "language" },
-    { id: 5, name: "REACT", lvl: 4, type: "library" },
+    { id: 5, name: "REACT", lvl: 3, type: "library" },
     { id: 6, name: "NODE", lvl: 3, type: "tools" },
     { id: 7, name: "MONGODB", lvl: 2, type: "backend" },
-    { id: 8, name: "SASS", lvl: 4, type: "tools" },
-    { id: 9, name: "BOOTSTRAP", lvl: 3, type: "library" },
+    { id: 8, name: "SASS", lvl: 3, type: "tools" },
+    { id: 9, name: "BOOTSTRAP", lvl: 2, type: "library" },
+    { id: 10, name: "ANIME", lvl: 2, type: "library" },
+    {id: 11, name: "EXPRESS", lvl: 2, type: "backend"},
   ];
 
   const languages = skills.filter((el) => el.type === "language");
@@ -33,11 +36,11 @@ function About() {
         { name: "Programm Basics (9 weeks)", info: "- Javascript" },
         {
           name: "Single Page Application (9 weeks)",
-          info: "- DOM, APIs, JSON, React.js, JSX templating",
+          info: "- APIs, JSON, React.js, Vite",
         },
         {
           name: "Backend (9 weeks)",
-          info: "- Node.js, Express.js, NOSQL, SQL, MongoDB",
+          info: "- Node.js, Express.js, SQL, MongoDB",
         },
         {
           name: "Final Project (9 weeks)",
@@ -72,27 +75,36 @@ function About() {
     },
   ];
 
+  anime({
+    targets: ".level-box",
+    scale: "1",
+    rotate: "1turn",
+    duration: 6000,
+    loop: true,
+  });
+
   return (
     <>
       <div className="aboutWrapper">
         <div className="aboutContainer">
-        
           <h2>About</h2>
           <div className="photo"></div>
 
           <div className="facts">
-          Hello Hi, I'm <span>Judith Bohmann</span> – a web developer with a
-        strong focus on frontend technologies based in Potsdam. I love building user-friendly and
-        high-performance applications that are not only functional but also
-        enjoyable to use. 
-        <br /><br />
-        For me, the user always comes first – I strive to
-        create intuitive interfaces and smooth user experiences. I enjoy
-        collaborating with teams, exchanging ideas, and finding pragmatic
-        solutions to technical challenges. 
-        <br /><br />
-        If you're looking for a passionate
-        web developer with an eye for detail, I'd love to hear from you!
+            Hello Hi, I'm <span>Judith Bohmann</span> – a web developer with a
+            strong focus on frontend technologies based in Potsdam. I love
+            building user-friendly and high-performance applications that are
+            not only functional but also enjoyable to use.
+            <br />
+            <br />
+            For me, the user always comes first – I strive to create intuitive
+            interfaces and smooth user experiences. I enjoy collaborating with
+            teams, exchanging ideas, and finding pragmatic solutions to
+            technical challenges.
+            <br />
+            <br />
+            If you're looking for a passionate web developer with an eye for
+            detail, I'd love to hear from you!
           </div>
 
           <div className="skills">
@@ -102,8 +114,11 @@ function About() {
                 <li key={el.id}>
                   {el.name}{" "}
                   <div className="skill-level">
-                    {Array.from({ length: el.lvl }).map((_, index) => (
-                      <div key={index} className="level-box"></div>
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <div
+                        key={index}
+                        className={index < el.lvl ? "level-box" : "filler-box"}
+                      ></div>
                     ))}
                   </div>
                 </li>
@@ -115,8 +130,11 @@ function About() {
                 <li key={el.id}>
                   {el.name}{" "}
                   <div className="skill-level">
-                    {Array.from({ length: el.lvl }).map((_, index) => (
-                      <div key={index} className="level-box"></div>
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <div
+                        key={index}
+                        className={index < el.lvl ? "level-box" : "filler-box"}
+                      ></div>
                     ))}
                   </div>
                 </li>
@@ -128,8 +146,11 @@ function About() {
                 <li key={el.id}>
                   {el.name}{" "}
                   <div className="skill-level">
-                    {Array.from({ length: el.lvl }).map((_, index) => (
-                      <div key={index} className="level-box"></div>
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <div
+                        key={index}
+                        className={index < el.lvl ? "level-box" : "filler-box"}
+                      ></div>
                     ))}
                   </div>
                 </li>
@@ -141,8 +162,11 @@ function About() {
                 <li key={el.id}>
                   {el.name}{" "}
                   <div className="skill-level">
-                    {Array.from({ length: el.lvl }).map((_, index) => (
-                      <div key={index} className="level-box"></div>
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <div
+                        key={index}
+                        className={index < el.lvl ? "level-box" : "filler-box"}
+                      ></div>
                     ))}
                   </div>
                 </li>
@@ -155,7 +179,7 @@ function About() {
             <h3>Qualifications</h3>
             <ul className="qualiUl">
               {qualis.map((el) => (
-                <li key={el.name} className = {`qualiLi${el.id}`}>
+                <li key={el.name} className={`qualiLi${el.id}`}>
                   <div className="qualiYear">
                     <span>-</span> {el.year} <span>-</span>
                   </div>

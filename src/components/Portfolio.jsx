@@ -63,16 +63,19 @@ function Portfolio() {
     <div className="portWrapper">
       <div className="portfolioContainer">
         <h2>Portfolio</h2>
-        < div className="cards">
+        <div className="cards">
           {portfolio.map((proj) => (
-            < div key={proj.id} className="cardItem">
+            <div key={proj.id} className="cardItem">
               <img className="d-block w-100" src={proj.image} alt={proj.name} />
               <div className="caption">
                 <h3>{proj.name}</h3>
                 <p className="portDesc">{proj.description}</p>
-                <ul className = "cardList"> {proj.technics.map((el, index) => (
-                  <li key={index}>{el}</li>
-                ))}</ul>
+                <ul className="cardList">
+                  {" "}
+                  {proj.technics.map((el, index) => (
+                    <li key={index}>{el}</li>
+                  ))}
+                </ul>
                 <p>
                   <a className="portLink" href={proj.webpageLink}>
                     {proj.name}
@@ -84,9 +87,9 @@ function Portfolio() {
                   </a>
                 </p>
               </div>
-              </div>
+            </div>
           ))}
-      </div>
+        </div>
       </div>
     </div>
   );

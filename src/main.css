@@ -17,7 +17,7 @@
   text-decoration-color: white;
 }
 
-.portfolioContainer:hover, .aboutContainer:hover {
+.portfolioContainer:hover {
   box-shadow: 10px 10px 50px rgba(255, 255, 0, 0.0901960784);
 }
 
@@ -105,6 +105,11 @@
   width: 10px;
   height: 10px;
   background-color: #FFED00;
+}
+.aboutContainer .skills .skill-level .filler-box {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
 }
 .aboutContainer .quali {
   margin-top: 1rem;

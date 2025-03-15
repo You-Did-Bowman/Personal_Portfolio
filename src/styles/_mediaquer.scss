@@ -13,17 +13,16 @@
     box-shadow: inset 25px -17px 47px 25px #000000;
 
     .aboutContainer {
+      border: 2px solid red;
       padding: 2rem;
-      position: relative;
-      width: 85vw;
-      top: 4rem;
+      width: 85%;
       border-radius: 50px;
       background-color: #413f3f46;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
       grid-template-areas:
         "h2 h2 h2"
-        ". photo ."
+      
         "facts facts skills"
         "quali quali quali"
         "xp xp xp";
@@ -48,7 +47,10 @@
       .qualiUl {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "qualiLi1 qualiLi2 qualiLi3";
+        grid-template-areas: 
+        "qualiLi1 qualiLi1 qualiLi1"
+        "qualiLi2 qualiLi2 qualiLi2"
+        "qualiLi3 qualiLi3 qualiLi3";
         justify-content: center;
       }
 
@@ -79,9 +81,8 @@
 
   /* ----- Portfolio ---- */
   .portWrapper {
-
     .portfolioContainer {
-      width: 80vw;
+      width: 80%;
       border-radius: 50px;
       background-color: #413f3f46;
 
@@ -94,7 +95,7 @@
 
         .cardItem {
           width: 400px;
-          
+
           img {
             border-radius: 10px;
           }
@@ -143,9 +144,7 @@
 
     .aboutContainer {
       padding: 2rem;
-      position: relative;
-      width: 85vw;
-      top: 4rem;
+      width: 85%;
       border-radius: 50px;
       background-color: #413f3f46;
       grid-template-columns: 1fr 1fr 1fr;
@@ -153,8 +152,11 @@
       grid-template-areas:
         "h2 h2 h2"
         "photo facts skills"
-        "quali quali xp"
-        ;
+        "quali quali xp";
+    }
+
+    .aboutContainer:hover {
+      @extend %wrapperShadow;
     }
 
     .photo {
@@ -203,7 +205,6 @@
 
     .xp {
       grid-area: xp;
-   
     }
 
     h2 {
@@ -212,9 +213,8 @@
   }
 
   .portWrapper {
-
     .portfolioContainer {
-      width: 80vw;
+      width: 80%;
       border-radius: 50px;
       background-color: #413f3f46;
 
@@ -227,7 +227,7 @@
 
         .cardItem {
           width: 400px;
-          
+
           img {
             border-radius: 10px;
           }
@@ -242,6 +242,10 @@
           }
         }
       }
+    }
+
+    .portfolioContainer:hover {
+      @extend %wrapperShadow;
     }
   }
 

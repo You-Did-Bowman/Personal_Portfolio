@@ -1,7 +1,3 @@
-/* 
-- carussel für portfolio: https://codingyaar.com/bootstrap-4-carousel-multiple-items-responsive/
-*/
-
 .portfolioContainer {
   padding: $genericPadding 0;
   width: 70vw;
@@ -22,7 +18,7 @@
   }
 
   .carousel {
-    padding-top: $genericPadding;
+    padding: $genericPadding;
   }
 
   .carouselItem {
@@ -49,9 +45,3 @@
     text-align: justify;
   }
 }
-
-.portfolioContainer:hover {
-  @extend %wrapperShadow;
-}
-
- 
