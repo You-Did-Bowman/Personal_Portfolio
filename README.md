@@ -30,15 +30,15 @@ Check out the live version of the portfolio <a href="https://by-judith-bohmann.c
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Screenshots
-![Screenshot1](/Personal_Portfolio/ReadME-assets/Screenshot_Portfolio-About.png) 
+![Screenshot1](assets/Screenshot_Portfolio-About.png) 
 About section
 <br>
 <br>
-![Screenshot_Portfolio-About](Screenshot_Portfolio-Portfolio.png) 
+![Screenshot_Portfolio-About](assets/Screenshot_Portfolio-Portfolio.png) 
 Portfolio section
 <br>
 <br>
-![Screenshot3](/Personal_Portfolio/ReadME-assets/Screenshot_Portfolio-Downloads.png) 
+![Screenshot3](assets/Screenshot_Portfolio-Downloads.png) 
 <br>
 Download section
 <br>
