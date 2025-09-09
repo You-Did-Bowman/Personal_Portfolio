@@ -34,7 +34,7 @@ Check out the live version of the portfolio <a href="https://by-judith-bohmann.c
 About section
 <br>
 <br>
-![Screenshot_Portfolio-About](/Personal_Portfolio/Screenshot_Portfolio-Portfolio.png) 
+![Screenshot_Portfolio-About](Screenshot_Portfolio-Portfolio.png) 
 Portfolio section
 <br>
 <br>
