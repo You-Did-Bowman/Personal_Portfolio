@@ -1,9 +1,18 @@
-import React from "react";
-import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Portfolio() {
   const portfolio = [
+         {
+      id: 5,
+      name: "CODEREALM",
+      description:
+      "Coderealm is an educational role-playing platform designed to teach web development in an engaging, game-like environment. It combines the features of: \n\n - Role-Playing: Players progress through levels and quests.\n - Learning Platform: Structured lessons with theory and practice.\n - Forum: A space to ask questions and collaborate. \n - AI Assistance: Smart hints and code feedback to support learning. \n - Challenges & Hackathons: Competitive coding and team-based problem solving.",
+       image:
+        "./src/assets/Screenshot1_Landing-page.png",
+      webpageLink: "https://coderealm-e7af.onrender.com/",
+      githubLink: "https://github.com/You-Did-Bowman/Coderealm-FE",
+      technics: ["JavaScript", "SASS", "React.js", "Vite.js", "Threejs", "Monaco-Editor", "AWS", "Nodejs", "Express", "MySQL", "Google Authenticator"],
+    },
     {
       id: 1,
       name: "Pokedex",

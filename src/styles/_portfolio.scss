@@ -17,31 +17,8 @@
     @extend %link;
   }
 
-  .carousel {
-    padding: $genericPadding;
-  }
-
-  .carouselItem {
-    padding: 0 $genericPadding;
-    
-    img {
-      border-radius: 25px;
-    }
-  }
-
-  .carousel-indicators {
-    margin-bottom: -0.5rem;
-  }
-
-  .carousel-control-prev {
-    left: -3.3rem;
-  }
-
-  .carousel-control-next {
-    right: -3.3rem;
-  }
-
   .portDesc {
     text-align: justify;
+    white-space: pre-line;
   }
 }
