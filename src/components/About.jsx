@@ -7,16 +7,23 @@ import anime from "animejs/lib/anime.es.js";
 function About() {
   const skills = [
     { id: 1, name: "JAVASCRIPT", lvl: 4, type: "language" },
+    { id: 12, name: "TYPESCRIPT", lvl: 3, type: "language" },
     { id: 2, name: "CSS", lvl: 3, type: "language" },
     { id: 3, name: "HTML", lvl: 4, type: "language" },
     { id: 4, name: "PYTHON", lvl: 2, type: "language" },
-    { id: 5, name: "REACT", lvl: 3, type: "library" },
-    { id: 6, name: "NODE", lvl: 3, type: "tools" },
-    { id: 7, name: "MONGODB", lvl: 2, type: "backend" },
+    { id: 5, name: "REACT", lvl: 4, type: "library" },
+    { id: 13, name: "ANGULAR", lvl: 3, type: "library" },
+    { id: 6, name: "NODE", lvl: 3, type: "backend" },
+    { id: 7, name: "MONGODB", lvl: 3, type: "backend" },
     { id: 8, name: "SASS", lvl: 3, type: "tools" },
     { id: 9, name: "BOOTSTRAP", lvl: 2, type: "library" },
     { id: 10, name: "ANIME", lvl: 2, type: "library" },
-    { id: 11, name: "EXPRESS", lvl: 2, type: "backend" },
+    { id: 11, name: "EXPRESS", lvl: 3, type: "backend" },
+    { id: 14, name: "MySQL", lvl: 2, type: "backend" },
+    { id: 15, name: "PostgreSQL", lvl: 2, type: "backend" },
+    { id: 16, name: "OpenAPI", lvl: 2, type: "backend" },
+    { id: 17, name: "VISUALSTUDIO", lvl: 3, type: "tools" },
+    { id: 13, name: "INTELLIJ", lvl: 3, type: "tools" },
   ];
 
   const languages = skills.filter((el) => el.type === "language");
