@@ -208,9 +208,10 @@ function About() {
 
           <div className="xp">
             <h3>Professional experience</h3>
-            <h4>Motognosis GmbH</h4>
+            <h4>Motognosis GmbH, Berlin</h4>
             <div>
               <span>-</span> 2020 - 2024 <span>-</span>
+              <br />Assistence of CEO / project management 
             </div>
             <p>
               - Implementation of the QM for the medical device 'Amsa' according
@@ -224,6 +225,15 @@ function About() {
             <p>
               - Development of algorithmic analyses and measurement data
               analyses in medical studies in the field of motion analysis
+            </p>
+
+            <h4>Flavia IT-Management GmbH, Kassel</h4>
+            <div>
+              <span>-</span> 06.2024 - 08.2024 <span>-</span>
+              <br />Internship Full-Stack-Developer
+            </div>
+            <p>
+              - Fullstack development in agile SCRUM with TypeScript, Angular, Angular Material, OpenAPI, PostgreSQL, Spring Boot, Java
             </p>
           </div>
         </div>
